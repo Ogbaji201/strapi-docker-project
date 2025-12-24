@@ -54,3 +54,7 @@ yarn-error.log
 
 # Optional: product images (if they're dev/test)
 # products/
+products/
+# Strapi media uploads
+public/uploads/
+app/public/uploads/
