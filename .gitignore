@@ -7,9 +7,10 @@
 **/.tmp
 **/build
 
-# env
+# env - block all .env files EXCEPT .env.example
 **/.env
 **/.env.*
+!**/.env.example
 
 # logs
 **/*.log
@@ -24,10 +25,15 @@ Thumbs.db
 .strapi-cloud.json
 public/uploads/*
 !public/uploads/.gitkeep
+app/public/uploads/*
+!app/public/uploads/.gitkeep
 exports/
 license.txt
 .tsbuildinfo
 .eslintcache
+
+# Product images (already in Strapi media library)
+products/
 
 # IDE
 .vscode/
@@ -51,10 +57,3 @@ yarn-error.log
 *.7z
 *.zip
 *.tar.gz
-
-# Optional: product images (if they're dev/test)
-# products/
-products/
-# Strapi media uploads
-public/uploads/
-app/public/uploads/
