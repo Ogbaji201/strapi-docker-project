@@ -1,0 +1,17 @@
+
+cd app
+@"
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+.git
+.gitignore
+README.md
+.env
+.tmp
+.cache
+build/
+dist/
+"@ | Out-File -FilePath ".dockerignore" -Encoding ascii

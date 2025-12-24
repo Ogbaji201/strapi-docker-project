@@ -1,0 +1,21 @@
+cat > .gitignore <<'EOF'
+# dependencies
+**/node_modules
+
+# build output
+**/dist
+**/.cache
+**/.tmp
+**/build
+
+# env
+**/.env
+**/.env.*
+
+# logs
+**/*.log
+
+# OS
+.DS_Store
+Thumbs.db
+EOF

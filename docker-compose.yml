@@ -1,0 +1,18 @@
+﻿services:
+  strapi:
+    build: ./app
+    container_name: strapi
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+    ports:
+      - '1337:1337'
+    volumes:
+      - ./app:/app
+      - /app/node_modules
+    networks:
+      - strapi-network
+
+networks:
+  strapi-network:
+    driver: bridge
